@@ -63,7 +63,7 @@ const MarqueeScroll: React.FC = () => {
     const fetchTokens = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get(getApiUrl(`/marquee-tokens`));
+        const response = await axios.get(getApiUrl(`/marquee-coins`));
         let limitedTokens = response.data;
 
         if (limitedTokens.length < 8) {
